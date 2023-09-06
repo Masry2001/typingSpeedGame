@@ -61,12 +61,12 @@ body {
     content: " ]";
 }
 
-.start {
+.start, 
+.again {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    background-color: #009688;
-    background-image: linear-gradient(to right, #009688, #038376 );
+    background-image: linear-gradient(to bottom, var(--main-color), #0e72c4 );
     color: white;
     padding: 20px;
     cursor: pointer;
@@ -80,8 +80,9 @@ body {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
-.start:hover {
-    box-shadow: 0 5px 5px #009688 ;
+.start:hover, 
+.again:hover {
+    box-shadow: 0 5px 5px #0e72c4 ;
 }
 
 .the-word {
@@ -169,4 +170,8 @@ body {
 
 .finish .bad {
     color: red;
+}
+
+.again {
+    display: none;
 }
